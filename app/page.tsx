@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       <section className="timeline">
-        <div className="section-head"><div><span className="eyebrow">RACE LOG</span><h2>Timeline</h2></div><Baby size={20}/></section>
+        <div className="section-head"><div><span className="eyebrow">RACE LOG</span><h2>Timeline</h2></div><Baby size={20}/></div>
         {events.length === 0 ? <div className="empty"><strong>Telemetry is quiet.</strong><span>Your first log will show up here.</span></div> : events.map((e, i) => <div className="event" key={`${e.type}-${e.id}`}><div className={`event-icon ${e.type}`}>{e.type === "feed" ? "🍼" : e.type === "diaper" ? "💧" : e.type === "sleep" ? "😴" : "🥛"}</div><div className="event-copy"><strong>{e.label}</strong><span>{e.detail}</span></div><time>{ago(e.at)}</time>{i < events.length-1 && <div className="event-line"/>}</div>)}
       </section>
 
