@@ -51,3 +51,4 @@ The included SQL policies are intentionally permissive so the MVP is fast to tes
 - Pump inventory / fridge stash
 - Home-screen PWA icon + manifest
 - Bottle timer and next-feed reminder
+Deployment trigger
